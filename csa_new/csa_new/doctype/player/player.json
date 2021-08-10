@@ -1,0 +1,210 @@
+{
+ "actions": [],
+ "autoname": "PL.####",
+ "creation": "2021-08-09 16:04:00.335067",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user_name",
+  "first_name",
+  "last_name",
+  "pofile_phote",
+  "dob",
+  "mobile_number",
+  "gender",
+  "membership_id",
+  "player_type",
+  "national_identity_number",
+  "union",
+  "column_break_11",
+  "geo_political",
+  "province",
+  "region",
+  "race",
+  "city",
+  "country",
+  "bat_hand",
+  "bat_role",
+  "bowl_hand",
+  "bowl_role",
+  "bowling_action",
+  "active",
+  "disability"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "label": "User Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "pofile_phote",
+   "fieldtype": "Attach",
+   "label": "Pofile Phote"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "DOB"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale\nOther"
+  },
+  {
+   "fieldname": "membership_id",
+   "fieldtype": "Data",
+   "label": "Membership ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "player_type",
+   "fieldtype": "Select",
+   "label": "Player Type",
+   "options": "\nForeign\nLocal"
+  },
+  {
+   "depends_on": "eval:doc.player_type==\"Foreign\"",
+   "fieldname": "national_identity_number",
+   "fieldtype": "Data",
+   "label": "National Identity Number"
+  },
+  {
+   "depends_on": "eval:doc.player_type==\"Foreign\"",
+   "fieldname": "union",
+   "fieldtype": "Link",
+   "label": "Union",
+   "options": "Union"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.player_type==\"Foreign\"",
+   "fieldname": "geo_political",
+   "fieldtype": "Link",
+   "label": "Geo Political",
+   "options": "Geo Political"
+  },
+  {
+   "depends_on": "eval:doc.player_type==\"Foreign\"",
+   "fieldname": "province",
+   "fieldtype": "Link",
+   "label": "Province",
+   "options": "Provinces"
+  },
+  {
+   "depends_on": "eval:doc.player_type==\"Foreign\"",
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Region"
+  },
+  {
+   "depends_on": "eval:doc.player_type==\"Foreign\"",
+   "fieldname": "race",
+   "fieldtype": "Link",
+   "label": "Race",
+   "options": "Race"
+  },
+  {
+   "fieldname": "active",
+   "fieldtype": "Select",
+   "label": "Active",
+   "options": "active"
+  },
+  {
+   "fieldname": "disability",
+   "fieldtype": "Link",
+   "label": "Disability",
+   "options": "Disability"
+  },
+  {
+   "depends_on": "eval:doc.player_type==\"Local\"",
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "depends_on": "eval:doc.player_type==\"Local\"",
+   "fieldname": "country",
+   "fieldtype": "Select",
+   "label": "Country",
+   "options": "\nAfghanistan\nAlbania\nAlgeria\nAndorra\nAngola\nAntigua & Deps\nArgentina\nArmenia\nAustralia\nAustria\nAzerbaijan\nBahamas\nBahrain\nBangladesh\nBarbados\nBelarus\nBelgium\nBelize\nBenin\nBhutan\nBolivia\nBosnia Herzegovina\nBotswana\nBrazil\nBrunei\nBulgaria\nBurkina\nBurundi\nCambodia\nCameroon\nCanada\nCape Verde\nCentral African Rep\nChad\nChile\nChina\nColombia\nComoros\nCongo\nCongo {Democratic Rep}\nCosta Rica\nCroatia\nCuba\nCyprus\nCzech Republic\nDenmark\nDjibouti\nDominica\nDominican Republic\nEast Timor\nEcuador\nEgypt\nEl Salvador\nEquatorial Guinea\nEritrea\nEstonia\nEthiopia\nFiji\nFinland\nFrance\nGabon\nGambia\nGeorgia\nGermany\nGhana\nGreece\nGrenada\nGuatemala\nGuinea\nGuinea-Bissau\nGuyana\nHaiti\nHonduras\nHungary\nIceland\nIndia\nIndonesia\nIran\nIraq\nIreland {Republic}\nIsrael\nItaly\nIvory Coast\nJamaica\nJapan\nJordan\nKazakhstan\nKenya\nKiribati\nKorea North\nKorea South\nKosovo\nKuwait\nKyrgyzstan\nLaos\nLatvia\nLebanon\nLesotho\nLiberia\nLibya\nLiechtenstein\nLithuania\nLuxembourg\nMacedonia\nMadagascar\nMalawi\nMalaysia\nMaldives\nMali\nMalta\nMarshall Islands\nMauritania\nMauritius\nMexico\nMicronesia\nMoldova\nMonaco\nMongolia\nMontenegro\nMorocco\nMozambique\nMyanmar, {Burma}\nNamibia\nNauru\nNepal\nNetherlands\nNew Zealand\nNicaragua\nNiger\nNigeria\nNorway\nOman\nPakistan\nPalau\nPanama\nPapua New Guinea\nParaguay\nPeru\nPhilippines\nPoland\nPortugal\nQatar\nRomania\nRussian Federation\nRwanda\nSt Kitts & Nevis\nSt Lucia\nSaint Vincent & the Grenadines\nSamoa\nSan Marino\nSao Tome & Principe\nSaudi Arabia\nSenegal\nSerbia\nSeychelles\nSierra Leone\nSingapore\nSlovakia\nSlovenia\nSolomon Islands\nSomalia\nSouth Africa\nSouth Sudan\nSpain\nSri Lanka\nSudan\nSuriname\nSwaziland\nSweden\nSwitzerland\nSyria\nTaiwan\nTajikistan\nTanzania\nThailand\nTogo\nTonga\nTrinidad & Tobago\nTunisia\nTurkey\nTurkmenistan\nTuvalu\nUganda\nUkraine\nUnited Arab Emirates\nUnited Kingdom\nUnited States\nUruguay\nUzbekistan\nVanuatu\nVatican City\nVenezuela\nVietnam\nYemen\nZambia\nZimbabwe"
+  },
+  {
+   "fieldname": "bat_hand",
+   "fieldtype": "Link",
+   "label": "Bat Hand",
+   "options": "Bat Hand"
+  },
+  {
+   "fieldname": "bat_role",
+   "fieldtype": "Link",
+   "label": "Bat Role",
+   "options": "Bat Role"
+  },
+  {
+   "fieldname": "bowl_hand",
+   "fieldtype": "Link",
+   "label": "Bowl Hand",
+   "options": "Bowl Role"
+  },
+  {
+   "fieldname": "bowl_role",
+   "fieldtype": "Link",
+   "label": "Bowl Role",
+   "options": "Bowl Role"
+  },
+  {
+   "fieldname": "bowling_action",
+   "fieldtype": "Link",
+   "label": "Bowling Action",
+   "options": "Bowling Action"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-08-09 16:18:41.976647",
+ "modified_by": "Administrator",
+ "module": "Csa New",
+ "name": "Player",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "autoname": "CA.####",
+ "creation": "2021-08-09 13:05:03.584390",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user_name",
+  "first_name",
+  "last_name",
+  "pofile_phote",
+  "dob",
+  "mobile_number",
+  "gender",
+  "membership_id",
+  "national_identity_number",
+  "union",
+  "column_break_11",
+  "geo_political",
+  "province",
+  "region",
+  "race",
+  "department",
+  "designation",
+  "active",
+  "disability"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "label": "User Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "pofile_phote",
+   "fieldtype": "Attach",
+   "label": "Pofile Phote"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "DOB"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale\nOther"
+  },
+  {
+   "fieldname": "membership_id",
+   "fieldtype": "Data",
+   "label": "Membership ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "national_identity_number",
+   "fieldtype": "Data",
+   "label": "National Identity Number"
+  },
+  {
+   "fieldname": "union",
+   "fieldtype": "Link",
+   "label": "Union",
+   "options": "Union"
+  },
+  {
+   "fieldname": "geo_political",
+   "fieldtype": "Link",
+   "label": "Geo Political",
+   "options": "Geo Political"
+  },
+  {
+   "fieldname": "province",
+   "fieldtype": "Link",
+   "label": "Province",
+   "options": "Provinces"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Region"
+  },
+  {
+   "fieldname": "race",
+   "fieldtype": "Link",
+   "label": "Race",
+   "options": "Race"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "active",
+   "fieldtype": "Select",
+   "label": "Active",
+   "options": "active"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "disability",
+   "fieldtype": "Link",
+   "label": "Disability",
+   "options": "Disability"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-08-10 11:30:48.750216",
+ "modified_by": "Administrator",
+ "module": "Csa New",
+ "name": "CSA Admin",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

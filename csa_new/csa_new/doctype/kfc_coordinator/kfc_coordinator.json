@@ -1,0 +1,187 @@
+{
+ "actions": [],
+ "autoname": "KFC.####",
+ "creation": "2021-08-09 15:52:05.981705",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user_name",
+  "first_name",
+  "last_name",
+  "pofile_phote",
+  "dob",
+  "mobile_number",
+  "gender",
+  "membership_id",
+  "national_identity_number",
+  "union",
+  "column_break_11",
+  "geo_political",
+  "province",
+  "region",
+  "race",
+  "coach_level",
+  "coach_type",
+  "is_certified",
+  "document_upload",
+  "document_type",
+  "document_expiry_date",
+  "active",
+  "disability"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "label": "User Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "pofile_phote",
+   "fieldtype": "Attach",
+   "label": "Pofile Phote"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "DOB"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale\nOther"
+  },
+  {
+   "fieldname": "membership_id",
+   "fieldtype": "Data",
+   "label": "Membership ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "national_identity_number",
+   "fieldtype": "Data",
+   "label": "National Identity Number"
+  },
+  {
+   "fieldname": "union",
+   "fieldtype": "Link",
+   "label": "Union",
+   "options": "Union"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "geo_political",
+   "fieldtype": "Link",
+   "label": "Geo Political",
+   "options": "Geo Political"
+  },
+  {
+   "fieldname": "province",
+   "fieldtype": "Link",
+   "label": "Province",
+   "options": "Provinces"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Region"
+  },
+  {
+   "fieldname": "race",
+   "fieldtype": "Link",
+   "label": "Race",
+   "options": "Race"
+  },
+  {
+   "fieldname": "coach_level",
+   "fieldtype": "Link",
+   "label": "Coach level",
+   "options": "Coach level"
+  },
+  {
+   "fieldname": "coach_type",
+   "fieldtype": "Select",
+   "label": "Coach Type",
+   "options": "Head Coach\nBowling Coach\nBatting Coach\nWicket keeping Coach\nFielding Coach\nTrainer\nPhysio\nAnalyst"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_certified",
+   "fieldtype": "Check",
+   "label": "Is Certified"
+  },
+  {
+   "fieldname": "document_upload",
+   "fieldtype": "Attach",
+   "label": "Document Upload"
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Link",
+   "label": "Document Type",
+   "options": "Document type"
+  },
+  {
+   "fieldname": "document_expiry_date",
+   "fieldtype": "Date",
+   "label": "Document Expiry Date"
+  },
+  {
+   "fieldname": "active",
+   "fieldtype": "Select",
+   "label": "Active",
+   "options": "active"
+  },
+  {
+   "fieldname": "disability",
+   "fieldtype": "Link",
+   "label": "Disability",
+   "options": "Disability"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-08-09 15:52:05.981705",
+ "modified_by": "Administrator",
+ "module": "Csa New",
+ "name": "KFC Coordinator",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

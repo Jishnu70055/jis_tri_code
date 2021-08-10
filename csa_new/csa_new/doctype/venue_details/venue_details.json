@@ -1,0 +1,175 @@
+{
+ "actions": [],
+ "creation": "2021-08-05 18:21:18.383095",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "venue_name",
+  "description",
+  "date_opened",
+  "address",
+  "city",
+  "province",
+  "number_of_practice_nets",
+  "column_break_7",
+  "geotag",
+  "dimensions",
+  "crowd_capacity",
+  "lights",
+  "changing_rooms",
+  "type_of_nets_section",
+  "artificial_turf",
+  "column_break_15",
+  "concrete",
+  "section_break_18",
+  "parking_capacity",
+  "distance_from_nearest_train_station",
+  "distance_from_nearest_bus_stop",
+  "column_break_22",
+  "distance_from_nearest_airport",
+  "date_registered_with_csa"
+ ],
+ "fields": [
+  {
+   "fieldname": "venue_name",
+   "fieldtype": "Data",
+   "label": "Venue Name"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "date_opened",
+   "fieldtype": "Data",
+   "label": "Date Opened"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "province",
+   "fieldtype": "Data",
+   "label": "Province"
+  },
+  {
+   "fieldname": "geotag",
+   "fieldtype": "Data",
+   "label": "Geotag"
+  },
+  {
+   "fieldname": "dimensions",
+   "fieldtype": "Data",
+   "label": "Dimensions"
+  },
+  {
+   "fieldname": "crowd_capacity",
+   "fieldtype": "Data",
+   "label": "Crowd Capacity"
+  },
+  {
+   "fieldname": "lights",
+   "fieldtype": "Data",
+   "label": "Lights"
+  },
+  {
+   "fieldname": "changing_rooms",
+   "fieldtype": "Data",
+   "label": "Changing Rooms"
+  },
+  {
+   "fieldname": "number_of_practice_nets",
+   "fieldtype": "Data",
+   "label": "Number Of Practice Nets"
+  },
+  {
+   "fieldname": "type_of_nets_section",
+   "fieldtype": "Section Break",
+   "label": "Type Of Nets"
+  },
+  {
+   "fieldname": "artificial_turf",
+   "fieldtype": "Data",
+   "label": "Artificial Turf"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "concrete",
+   "fieldtype": "Data",
+   "label": "Concrete"
+  },
+  {
+   "fieldname": "parking_capacity",
+   "fieldtype": "Data",
+   "label": "Parking Capacity"
+  },
+  {
+   "fieldname": "distance_from_nearest_train_station",
+   "fieldtype": "Data",
+   "label": "Distance From Nearest Train Station"
+  },
+  {
+   "fieldname": "distance_from_nearest_bus_stop",
+   "fieldtype": "Data",
+   "label": "Distance From Nearest Bus Stop"
+  },
+  {
+   "fieldname": "distance_from_nearest_airport",
+   "fieldtype": "Data",
+   "label": "Distance From Nearest Airport"
+  },
+  {
+   "fieldname": "date_registered_with_csa",
+   "fieldtype": "Date",
+   "label": "Date Registered With CSA"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-08-06 08:03:42.427212",
+ "modified_by": "Administrator",
+ "module": "Csa New",
+ "name": "Venue Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

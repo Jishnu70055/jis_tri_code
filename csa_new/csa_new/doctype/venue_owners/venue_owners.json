@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "autoname": "VO.####",
+ "creation": "2021-08-09 15:21:09.128219",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "email_id",
+  "venue_name",
+  "responsible_for_own_responsibility",
+  "profile_photo",
+  "incorporation_date",
+  "venue_membership_id",
+  "latitude",
+  "longitude",
+  "infra_availability",
+  "column_break_10",
+  "geo_political",
+  "land_line_number",
+  "venue_address",
+  "manager_address",
+  "manager_email_id",
+  "municipality",
+  "settlement_type",
+  "active"
+ ],
+ "fields": [
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID"
+  },
+  {
+   "fieldname": "venue_name",
+   "fieldtype": "Data",
+   "label": "Venue Name"
+  },
+  {
+   "default": "0",
+   "fieldname": "responsible_for_own_responsibility",
+   "fieldtype": "Check",
+   "label": "Responsible For Own Responsibility"
+  },
+  {
+   "fieldname": "profile_photo",
+   "fieldtype": "Attach",
+   "label": "Profile Photo"
+  },
+  {
+   "fieldname": "incorporation_date",
+   "fieldtype": "Date",
+   "label": "Incorporation Date"
+  },
+  {
+   "fieldname": "venue_membership_id",
+   "fieldtype": "Data",
+   "label": "Venue Membership ID"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "infra_availability",
+   "fieldtype": "Table",
+   "label": "Infra Availability",
+   "options": "Infra Availability List"
+  },
+  {
+   "fieldname": "geo_political",
+   "fieldtype": "Link",
+   "label": "Geo Political",
+   "options": "Geo Political"
+  },
+  {
+   "fieldname": "land_line_number",
+   "fieldtype": "Data",
+   "label": "Land Line Number"
+  },
+  {
+   "fieldname": "venue_address",
+   "fieldtype": "Small Text",
+   "label": "Venue Address"
+  },
+  {
+   "fieldname": "manager_address",
+   "fieldtype": "Small Text",
+   "label": "Manager Address"
+  },
+  {
+   "fieldname": "manager_email_id",
+   "fieldtype": "Data",
+   "label": "Manager Email ID"
+  },
+  {
+   "fieldname": "municipality",
+   "fieldtype": "Link",
+   "label": "Municipality",
+   "options": "Municipality"
+  },
+  {
+   "fieldname": "settlement_type",
+   "fieldtype": "Link",
+   "label": "Settlement Type",
+   "options": "Settlement type"
+  },
+  {
+   "fieldname": "active",
+   "fieldtype": "Select",
+   "label": "Active",
+   "options": "Active"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-08-10 16:04:35.585781",
+ "modified_by": "Administrator",
+ "module": "Csa New",
+ "name": "Venue Owners",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
